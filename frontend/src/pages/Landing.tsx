@@ -102,23 +102,23 @@ function Landing() {
         <div className="pointer-events-none absolute inset-0 landing-hero-grid opacity-[0.45]" />
         <div className="pointer-events-none absolute right-0 top-0 h-[70%] w-[65%] bg-[radial-gradient(ellipse_at_70%_40%,rgb(37_99_235_/_0.08),transparent_60%)]" />
 
-        <div className="relative mx-auto grid max-w-[1200px] items-center gap-8 px-6 pb-16 pt-10 sm:px-8 lg:grid-cols-[minmax(0,0.42fr)_minmax(0,0.58fr)] lg:gap-6 lg:px-10 lg:pb-20 lg:pt-8 lg:min-h-[calc(100dvh-4rem)]">
+        <div className="relative mx-auto grid max-w-[1200px] items-center gap-6 px-6 pb-12 pt-6 sm:px-8 lg:grid-cols-[minmax(0,0.4fr)_minmax(0,0.6fr)] lg:gap-4 lg:px-10 lg:pb-14 lg:pt-4 lg:min-h-[calc(100dvh-4rem)]">
           <div className="landing-fade relative z-10 max-w-xl">
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-600">
               SIH 2026 · Disaster management
             </p>
-            <h1 className="landing-display mt-5 text-slate-950">
+            <h1 className="landing-display mt-4 text-slate-950">
               From dam break
               <br />
               to downstream
               <br />
               intelligence.
             </h1>
-            <p className="mt-6 max-w-md text-[18px] leading-relaxed text-slate-600">
+            <p className="mt-4 max-w-md text-[16px] leading-relaxed text-slate-600 sm:text-[17px]">
               Model hypothetical dam-break scenarios, trace flood propagation across terrain, and
               understand downstream impact through geospatial and 3D intelligence.
             </p>
-            <div className="mt-9 flex flex-wrap items-center gap-3">
+            <div className="mt-7 flex flex-wrap items-center gap-3">
               <Button type="button" size="xl" onClick={enter}>
                 Explore HYDROTRACE
                 <ArrowRight className="h-4 w-4" />
@@ -128,11 +128,11 @@ function Landing() {
                 Watch the 3D Demo
               </Button>
             </div>
-            <div className="mt-12 flex flex-wrap items-center gap-x-0 gap-y-2">
+            <div className="mt-8 flex flex-wrap items-center gap-x-0 gap-y-2">
               {['11 dam case studies', '2D geospatial', '3D digital twin', 'Impact intelligence'].map(
                 (item, i) => (
                   <div key={item} className="flex items-center">
-                    {i > 0 ? <span className="mx-4 hidden h-3 w-px bg-slate-300 sm:block" /> : null}
+                    {i > 0 ? <span className="mx-3.5 hidden h-3 w-px bg-slate-300 sm:block" /> : null}
                     <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-slate-500">
                       {item}
                     </p>
@@ -142,7 +142,7 @@ function Landing() {
             </div>
           </div>
 
-          <div className="relative z-0 -mx-2 sm:mx-0 lg:-mr-8 xl:-mr-16">
+          <div className="relative z-0 -mx-2 sm:mx-0 lg:-mr-10 xl:-mr-20">
             <HeroStage />
           </div>
         </div>

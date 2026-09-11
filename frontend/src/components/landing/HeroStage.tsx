@@ -48,7 +48,7 @@ function HeroStage() {
   return (
     <div
       ref={rootRef}
-      className="hero-stage-root relative h-full min-h-[440px] w-full overflow-visible lg:min-h-[620px]"
+      className="hero-stage-root relative h-full min-h-[400px] w-full overflow-visible lg:min-h-[560px]"
       style={
         {
           '--parallax-x': '0px',
@@ -70,7 +70,7 @@ function HeroStage() {
         <img
           src="/images/hero-digital-twin.png"
           alt="Cinematic digital twin of a dam, reservoir, and downstream flood propagation"
-          className="h-full w-full object-cover object-[55%_40%]"
+          className="h-full w-full object-cover object-[42%_36%]"
           decoding="async"
           fetchPriority="high"
           onLoad={() => setLoaded(true)}
